@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Life Necessity App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Basic Life Necessity App</h1>
+        <nav>
+            <ul>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#fitness">Fitness</a></li>
+                <li><a href="#goals">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <input type="date" id="task-date">
+            <input type="text" id="task-description" placeholder="Enter your task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="fitness">
+            <h2>Fitness Tracker</h2>
+            <input type="text" id="workout-description" placeholder="Enter your workout">
+            <input type="number" id="workout-duration" placeholder="Duration in minutes">
+            <button onclick="logWorkout()">Log Workout</button>
+            <ul id="workout-list"></ul>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <input type="text" id="goal-description" placeholder="Enter your goal">
+            <button onclick="setGoal()">Set Goal</button>
+            <ul id="goal-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Basic Life Necessity App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
